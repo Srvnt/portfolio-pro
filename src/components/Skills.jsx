@@ -127,7 +127,7 @@ export default function Skills() {
   const s = t.skills;
   return (
     <section className="section skills" id="skills">
-      <SectionLabel n="03">{s.label}</SectionLabel>
+      <SectionLabel n="04">{s.label}</SectionLabel>
       <Reveal as="h2" className="title">{s.title}</Reveal>
 
       <div className="bento">

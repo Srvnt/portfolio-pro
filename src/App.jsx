@@ -5,6 +5,7 @@ import Nav from "./components/Nav.jsx";
 import Hero from "./components/Hero.jsx";
 import About, { Marquee } from "./components/About.jsx";
 import Journey from "./components/Journey.jsx";
+import Work from "./components/Work.jsx";
 import Skills from "./components/Skills.jsx";
 import Craft from "./components/Craft.jsx";
 import Contact from "./components/Contact.jsx";
@@ -24,6 +25,7 @@ export default function App() {
           <Marquee />
           <About />
           <Journey />
+          <Work />
           <Skills />
           <Craft />
         </main>

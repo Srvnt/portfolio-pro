@@ -94,7 +94,7 @@ export default function Craft() {
   const c = t.craft;
   return (
     <section className="section craft" id="craft">
-      <SectionLabel n="04">{c.label}</SectionLabel>
+      <SectionLabel n="05">{c.label}</SectionLabel>
       <Reveal as="h2" className="title">
         <span className="c-red">{c.red}</span> <span className="c-green">{c.green}</span> <em>{c.refactor}</em>
       </Reveal>

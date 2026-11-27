@@ -25,7 +25,7 @@ export default function Contact() {
     <>
       <section className="section contact" id="contact">
         <div className="contact__glow" aria-hidden="true" />
-        <SectionLabel n="05">{t.contact.label}</SectionLabel>
+        <SectionLabel n="06">{t.contact.label}</SectionLabel>
         <Reveal as="h2" className="contact__title">{t.contact.title}</Reveal>
         <Reveal>
           <Magnetic as="button" className="contact__mail" onClick={copy}>

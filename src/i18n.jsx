@@ -10,7 +10,7 @@ export const CONFIG = {
 
 const fi = {
   title: "Petri Malmström — Ohjelmistokehittäjä",
-  nav: { status: "Avoin uusille haasteille", about: "Profiili", journey: "Polku", skills: "Osaaminen", craft: "Työtapa", contact: "Yhteys" },
+  nav: { status: "Avoin uusille haasteille", about: "Profiili", journey: "Polku", work: "Työt", skills: "Osaaminen", craft: "Työtapa", contact: "Yhteys" },
   hero: {
     kicker: "Ohjelmistokehittäjä @ Arter Oy",
     lead: "Rakennan puhdasta, skaalautuvaa ja luotettavaa koodia — Java, React, PostgreSQL ja pilvi. Testit ensin, automaatio aina.",
@@ -66,6 +66,37 @@ const fi = {
       },
     ],
   },
+  work: {
+    label: "Työnäytteet",
+    title: <>Koodia, joka <em>todistaa.</em></>,
+    sub: "Kaksi omaa projektia alusta loppuun — suunnittelusta testeihin ja tuotantoon.",
+    live: "Avaa demo", code: "Lähdekoodi",
+    projects: {
+      jobfit: {
+        kicker: "AI · selaimessa",
+        tagline: "Vertaa CV:tä työpaikkailmoitukseen merkityksen, ei avainsanojen perusteella.",
+        bullets: [
+          "Monikielinen (suomi & englanti) upotusmalli ajetaan kokonaan selaimessa Web Workerissa — CV ei koskaan poistu laitteelta.",
+          "Jokainen vaatimus kohdistetaan sitä tukevaan CV- tai portfoliorivin todisteeseen: täyttyy, osittain tai puuttuu.",
+          "Nimettyjen termien tarkistus paikkaa upotusten sokean pisteen (esim. ”Swedish” ≠ ”English”) ja ymmärtää suomen taivutukset.",
+          "SSRF-suojattu sivunhakija: DNS-tarkistus yhteyden hetkellä, uudelleenohjausten valvonta ja headless Chromium JS-sivuille.",
+        ],
+        stats: [["83 %", "tarkkuus 60 merkityllä vaatimuksella"], ["0 tavua", "CV-dataa palvelimelle"], ["3", "mallia vertailtu evaluaatiolla"]],
+      },
+      settleup: {
+        kicker: "Algoritmit · full-stack",
+        tagline: "Jaetut kulut tasan mahdollisimman vähillä tilisiirroilla — todistetusti.",
+        bullets: [
+          "Tarkka ratkaisija: dynaaminen ohjelmointi kaikkien 2ⁿ osajoukon yli löytää todistetusti minimimäärän siirtoja (NP-vaikea ongelma).",
+          "Raha kokonaislukusentteinä ja suurimman jäännöksen menetelmä — summat täsmäävät aina sentilleen.",
+          "Python-CLI, selainversio (ristiintarkistettu 800 satunnaistapauksella) ja Spring Boot -REST-API PostgreSQL:llä ja JWT-kirjautumisella.",
+          "Testattu brute force -vertailulla, ominaisuuspohjaisilla testeillä ja Testcontainers-integraatiotesteillä.",
+        ],
+        stats: [["3 vs 7", "siirtoa esimerkkitapauksessa"], ["75", "testiä (Python + Java)"], ["300", "satunnaistapausta brute force -tarkistettu"]],
+        demo: { exact: "Tarkka", greedy: "Ahne", transfers: "siirtoa", naive: "vs 7 naiivisti" },
+      },
+    },
+  },
   skills: {
     label: "Osaaminen",
     title: <>Työkalupakki, joka <em>skaalautuu.</em></>,
@@ -91,7 +122,7 @@ const fi = {
 
 const en = {
   title: "Petri Malmström — Software Developer",
-  nav: { status: "Open to new challenges", about: "Profile", journey: "Journey", skills: "Skills", craft: "Craft", contact: "Contact" },
+  nav: { status: "Open to new challenges", about: "Profile", journey: "Journey", work: "Work", skills: "Skills", craft: "Craft", contact: "Contact" },
   hero: {
     kicker: "Software Developer @ Arter Oy",
     lead: "I build clean, scalable and reliable software — Java, React, PostgreSQL and the cloud. Tests first, automation always.",
@@ -146,6 +177,37 @@ const en = {
         ],
       },
     ],
+  },
+  work: {
+    label: "Work",
+    title: <>Code that <em>proves it.</em></>,
+    sub: "Two personal projects built end to end — from design to tests to production.",
+    live: "Live demo", code: "Source code",
+    projects: {
+      jobfit: {
+        kicker: "AI · in the browser",
+        tagline: "Match a CV to a job ad by meaning, not keywords.",
+        bullets: [
+          "A multilingual (Finnish & English) embedding model runs entirely in the browser in a Web Worker — the CV never leaves the device.",
+          "Every requirement is matched to the CV or portfolio line that backs it up: met, partial or gap.",
+          "A named-term check fixes the embeddings' blind spot (\"Swedish\" ≠ \"English\") and understands Finnish inflections.",
+          "SSRF-hardened page fetcher: DNS checked at connect time, guarded redirects and headless Chromium for JS-only sites.",
+        ],
+        stats: [["83%", "accuracy on 60 labelled requirements"], ["0 bytes", "of CV data sent to a server"], ["3", "models compared by evaluation"]],
+      },
+      settleup: {
+        kicker: "Algorithms · full-stack",
+        tagline: "Settle shared expenses with the fewest possible transfers — provably.",
+        bullets: [
+          "Exact solver: dynamic programming over all 2ⁿ subsets finds the provably minimal number of transfers (an NP-hard problem).",
+          "Money as integer cents with the largest-remainder method — splits always add up to the cent.",
+          "Python CLI, a browser version (cross-checked on 800 random cases) and a Spring Boot REST API with PostgreSQL and JWT auth.",
+          "Tested against an independent brute force, with property-based tests and Testcontainers integration tests.",
+        ],
+        stats: [["3 vs 7", "transfers in the sample case"], ["75", "tests (Python + Java)"], ["300", "random cases brute-force verified"]],
+        demo: { exact: "Exact", greedy: "Greedy", transfers: "transfers", naive: "vs 7 naive" },
+      },
+    },
   },
   skills: {
     label: "Skills",

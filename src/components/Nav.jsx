@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLang } from "../i18n.jsx";
 
-const IDS = ["about", "journey", "skills", "craft", "contact"];
+const IDS = ["about", "journey", "work", "skills", "craft", "contact"];
 
 export default function Nav() {
   const { t, toggle } = useLang();
